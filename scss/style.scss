@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    // padding-left: 100px;
+    background: url(../img/clody-bg.jpg) center (center/cover) no-repeat;
+    
+    &__header {
+        display: flex;
+        padding: 50px 100px 0 400px;
+        justify-content: space-between;
+        .main__search {
+            width: 300px;
+            height: 40px;
+            background: rgba(0, 0, 0, 0.144);
+            padding-left: 25px;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 20px;
+        }
+        button {
+            width: 30px;
+            height: 40px;
+            background: rgba(0, 0, 0, 0.219);
+            color: white;
+            outline: none;
+        }
+        .main__wrap {
+            display: flex;
+            align-items: center;
+        }
+        img {
+            width: 32px;
+            margin-right: 15px;
+        }
+        .main__favorite-location {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 30px;
+            background: #feca3b;
+            font-size: 20px;
+            border-radius: 5px;
+            .opt {
+                color: #34454e;
+            }
+        }
+    }
+    &__location {
+        display: flex;
+        margin-top: 300px;
+        padding-left: 130px;
+        // padding-left: 80px;
+        .main__month {
+            color: #feca3b;
+            font-size: 17px;
+        }
+        .main__city {
+            color: white;
+            font-size: 65px;
+            font-weight: 300;
+        }
+        .fav-star {
+            color: white;
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 15px;
+            img {
+                width: 32px;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            .transparent-star {
+                background: url(../icon/transparent-star.svg) center (center/cover) no-repeat;
+                width: 32px;
+                height: 32px;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            .yellow-star {
+                background: url(../icon/star.svg) center (center/cover) no-repeat;
+                width: 32px;
+                height: 32px;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }
+    }
+    &__details {
+        padding-left: 100px;
+        display: flex;
+        max-width: 1000px;
+        min-height: 200px;
+        justify-content: space-around;
+        align-items: center;
+        background: rgba(182, 181, 181, 0.308);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        .main__temperature {
+            .main__temp-value {
+                font-size: 80px;
+                font-weight: 900;
+                color: white;
+            }
+            .main__feel-like {
+                font-size: 30px;
+                font-weight: 300;
+                color: white;
+            }
+        }
+        .main__condition-wrap {
+            display: flex;
+            align-items: center;
+            .main__condition-icon {
+                img {
+                    width: 60px;
+                }
+            }
+            .main__condition-desc {
+                color: white;
+                font-size: 20px;
+                font-weight: 300;
+            }
+        }
+        .main__condition-value {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            font-weight: 700;
+        }
+        .main__wind-wrap {
+            margin-top: 15px;
+            min-width: 100px;
+            display: flex;
+            justify-content: space-around;
+            .main__wind-icon {
+                img {
+                    width: 30px;
+                }
+            }
+            .main__wind-desc {
+                color: white;
+                font-size: 20px;
+                font-weight: 300;
+            }
+        }
+        .main__wind-value {
+            margin-top: 10px;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            font-weight: 700;
+        }
+        .main__humidity-wrap {
+            margin-top: 15px;
+            min-width: 100px;
+            display: flex;
+            justify-content: space-around;
+            .main__humidity-icon {
+                img {
+                    width: 30px;
+                }
+            }
+            .main__humidity-desc {
+                color: white;
+                font-size: 20px;
+                font-weight: 300;
+                margin-left: 10px;
+            }
+        }
+        .main__humidity-value {
+            margin-top: 10px;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            font-weight: 700;
+        }
+    }
+}

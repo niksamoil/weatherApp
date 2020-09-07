@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Weather</title>
+</head>
+<body>
+    
+    <section class="main">
+        <div class="main__header">
+            <div class="form">
+                <input autofocus type="text" placeholder="Enter city" class="main__search">
+                <button class="btn">Go</button>
+            </div>
+            <div class="main__wrap">
+                <img src="icon/star.svg" alt="favorite">
+                <select name="city" id="" class="main__favorite-location" >
+                    <option class="opt">Popular Cities</option>
+                    <option class="opt">Paris</option>
+                    <option class="opt">London</option>
+                    <option class="opt">Berlin</option>
+                    <option class="opt">Moscow</option>
+                    <option class="opt">Kiev</option>
+                    <option class="opt">Delhi</option>
+                    <option class="opt">New York</option>
+                </select>
+            </div>
+        </div>
+        <div class="main__location">
+            <div class="main__location-wrap">
+                <h3 class="main__month"> March 12</h3>
+                <h1 class="main__city">Chisinau</h1>
+            </div>
+            <!-- <div class="fav-star">
+                
+                <img src="icon/transparent-star.svg" alt="star" class="transparent-star">
+                Add to favorites
+                <div class="transparent-star"></div>
+                Add to favorites
+            </div> -->
+
+        </div>
+        <div class="main__details">
+            <div class="main__temperature">
+                <div class="main__temp-value">15&deg;C</div>
+                <div class="main__feel-like"> Feels like 10&deg;C</div>
+            </div>
+            <div class="main__condition">
+                <div class="main__condition-wrap">
+                    <div class="main__condition-icon">
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="condition">
+                    </div>
+                    <div class="main__condition-desc">
+                        Rain
+                    </div>
+                </div>
+                <div class="main__condition-value">
+                    40%
+                </div>
+            </div>
+            <div class="main__wind">
+                <div class="main__wind-wrap">
+                    <div class="main__wind-icon">
+                        <img src="icon/wind.png" alt="wind">
+                    </div>
+                    <div class="main__wind-desc">
+                        Wind
+                    </div>
+                </div>
+                <div class="main__wind-value">
+                    8 km/h
+                </div>
+            </div>
+            <div class="main__humidity">
+                <div class="main__humidity-wrap">
+                    <div class="main__humidity-icon">
+                        <img src="icon/humidity.png" alt="humidity">
+                    </div>
+                    <div class="main__humidity-desc">
+                        Humidity
+                    </div>
+                </div>
+                <div class="main__humidity-value">
+                    75%
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
