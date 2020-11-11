@@ -9,13 +9,21 @@
     max-width: 100%;
     min-height: 100vh;
     margin: 0 auto;
-    // padding-left: 100px;
-    background: url(../img/clody-bg.jpg) center (center/cover) no-repeat;
+    // background: url(../img/clody-bg.jpg) center (center/cover) no-repeat;
+    background: url('../img/clody-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     
     &__header {
         display: flex;
         padding: 50px 100px 0 400px;
         justify-content: space-between;
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }        
         .main__search {
             width: 300px;
             height: 40px;
@@ -26,12 +34,17 @@
             color: white;
             font-size: 20px;
         }
-        button {
+        .btn {
+            margin-left: 2px;
             width: 30px;
             height: 40px;
-            background: rgba(0, 0, 0, 0.219);
+            background: rgba(0, 0, 0, 0.144);
             color: white;
             outline: none;
+            border: none;
+            &:hover {
+                cursor: pointer;
+            }
         }
         .main__wrap {
             display: flex;

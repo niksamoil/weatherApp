@@ -10,7 +10,10 @@
   max-width: 100%;
   min-height: 100vh;
   margin: 0 auto;
-  background: url(../img/clody-bg.jpg) center center/cover no-repeat;
+  background: url("../img/clody-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .main__header {
@@ -21,6 +24,18 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.main__header .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main__header .main__search {
@@ -34,12 +49,18 @@
   font-size: 20px;
 }
 
-.main__header button {
+.main__header .btn {
+  margin-left: 2px;
   width: 30px;
   height: 40px;
-  background: rgba(0, 0, 0, 0.219);
+  background: rgba(0, 0, 0, 0.144);
   color: white;
   outline: none;
+  border: none;
+}
+
+.main__header .btn:hover {
+  cursor: pointer;
 }
 
 .main__header .main__wrap {
