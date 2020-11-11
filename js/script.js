@@ -57,6 +57,8 @@ function getData(cityName) {
     });
 }
 
+getData('Chisinau');
+
 
 document.querySelector('.btn').addEventListener('click', (e) => {
     e.preventDefault();
@@ -70,9 +72,6 @@ document.querySelector('.btn').addEventListener('click', (e) => {
 });
 
 
-getData('Chisinau');
-
-
 document.querySelector('.main__favorite-location').addEventListener('change', () => {
 
     let selectValue = document.querySelector('.main__favorite-location').value;
@@ -81,8 +80,6 @@ document.querySelector('.main__favorite-location').addEventListener('change', ()
     if (selectValue == 'Popular Cities') {
 
         selectValue = 'Chisinau';
-
-        getData('Chisinau');
     }
 
     getData(selectValue);
